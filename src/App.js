@@ -37,6 +37,7 @@ const App = () => {
     return () => clearInterval(timer);
   }, [correct]);
 
+  //method to check user input matches answer or not
   const handleCheck = () => {
     const userInput = inputRef.current.value.replaceAll(/\s+/g, " ").trim();
     if (userInput.toLowerCase().includes(answer.toLocaleLowerCase())) {
